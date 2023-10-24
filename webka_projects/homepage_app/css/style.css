@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+/* ------ COLORS ------ */
+/* ------ FONT SIZE ------ */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: #ffffff;
+  /* Page Button */
+  /* Navigation */
+  /* HEADER */
+  /* Add these styles to your existing CSS */
+}
+body a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+body .container {
+  max-width: 1400px;
+  margin: auto;
+}
+body .row {
+  display: flex;
+}
+body .title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+body .page-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  color: #121212;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: 0.5s ease-in-out;
+}
+body .page-btn:hover {
+  color: #ffffff;
+  background: transparent;
+}
+body header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #121212;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+}
+body header .logo img {
+  max-width: 65px;
+  object-fit: contain;
+  transition: 1s ease-in-out;
+}
+body header .logo img:hover {
+  transform: rotateY(360deg);
+}
+body header .menu-burger {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  cursor: pointer;
+}
+body header .menu-burger .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: transform 0.5s ease-in-out;
+}
+body header .menu-burger .line:nth-child(1) {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+body header .menu-burger .line:nth-child(2) {
+  transition: transform 0.2s ease-in-out;
+}
+body header .menu-burger .line:nth-child(3) {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+body header .menu-burger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+body header .menu-burger.active .line:nth-child(2) {
+  transform: scaleY(0);
+}
+body header .menu-burger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+}
+body header nav {
+  align-items: center;
+  gap: 2rem;
+}
+body header nav ul {
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+body header nav ul a {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+body header nav ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+body header nav ul a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+body .hero {
+  background-image: url("../images/bg-img.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+body .hero .box {
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.6156862745);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+body .hero .box h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+body .hero .box p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+body .hero .box .btn {
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #d4af37;
+  font-weight: bold;
+  background-color: transparent;
+  color: #d4af37;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 6px #d4af37;
+}
+body .hero .box .btn:hover {
+  background-color: #d4af37;
+  color: #121212;
+}
+body .about {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body .about .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+body .about .box .left {
+  min-width: 300px;
+}
+body .about .box .left img {
+  max-width: 400px;
+  min-width: 250px;
+  width: 100%;
+}
+body .about .box .right {
+  min-width: 300px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+body .catalog {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+body .catalog .box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .catalog .box .card {
+  overflow: hidden;
+  width: 30%; /* Adjust the width of the cards */
+  height: 400px;
+  max-width: 400px;
+  background-color: #010101;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body .catalog .box .card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+body .catalog .box .card .details {
+  color: #ffffff;
+}
+body .catalog .box .card .details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+body .catalog .box .card .details p {
+  margin-bottom: 10px;
+}
+body footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+body .cont {
+  width: 80%;
+  margin: 10rem auto;
+}
+body .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .social-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+body .social-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Media start */
+@media (width > 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 800px) {
+  header .menu-burger {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@media (max-width: 800px) {
+  header nav {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease-in-out;
+  }
+  nav.active {
+    position: fixed;
+    min-height: 100%;
+    background-color: #121212;
+    opacity: 1;
+    z-index: 99;
+    transform: scale(1);
+  }
+  nav.active ul {
+    flex-direction: column;
+  }
+}
+/* Media end */ /*# sourceMappingURL=style.css.map */

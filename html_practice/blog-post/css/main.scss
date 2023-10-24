@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 100vh;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    .top {
+      text-align: center;
+
+      h1 {
+        padding-bottom: 1.5rem;
+      }
+
+      p {
+        color: #999;
+        padding: 0.5rem 0;
+        span {
+          color: #666;
+        }
+      }
+
+      .link {
+        color: #51b0ff;
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 6rem;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .box-img {
+      overflow: hidden;
+
+      img {
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+    }
+
+    article {
+      padding: 1rem;
+      p {
+        padding: 1rem;
+      }
+    }
+  }
+}
