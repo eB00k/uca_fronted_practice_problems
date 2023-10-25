@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@500&display=swap");
+:root {
+  --fcolor: #603d95;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1em;
+  background: linear-gradient(135deg, #1de5e2, #b588f7);
+}
+
+.form-div {
+  padding: 0;
+}
+
+fieldset {
+  max-width: 360px;
+  width: 100%;
+  padding: 25px 30px;
+  border: 2px solid rgba(0, 0, 0, 0.009);
+  border-radius: 5px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.534);
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+.title:hover {
+  font-size: 1.6em;
+  text-shadow: 2px 2px 2px #b588f7;
+}
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  text-align: left;
+}
+
+.input-box {
+  width: calc(100% - 20px);
+  margin: 8px 0;
+}
+
+.input-box label {
+  padding-left: 0;
+  display: block;
+}
+
+.input-box input {
+  height: 32px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  outline: none;
+  background: rgba(2, 197, 251, 0);
+  color: white;
+  padding-left: 10px;
+}
+
+#finish {
+  margin: 12px 8px;
+}
+#finish button {
+  text-decoration: none;
+  padding: 8px 40px;
+  outline: none;
+  border: none;
+  border-radius: 3em;
+  background-color: rgba(130, 57, 240, 0.8666666667);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#finish .rs {
+  background-color: rgba(128, 128, 128, 0.856);
+}
+#finish .sb:hover {
+  background-color: rgba(130, 57, 240, 0.6392156863);
+}
+#finish .rs:hover {
+  background-color: rgba(128, 128, 128, 0.648);
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  margin: 16px auto 8px auto;
+  border: none;
+  background-color: white;
+}
+
+.sign-or {
+  display: block;
+  margin: 4px 0;
+}
+.sign-or button {
+  width: 84%;
+  margin: 6px;
+  padding: 6px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 1em;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sign-or button:hover {
+  border-color: var(--fcolor);
+  color: var(--fcolor);
+}
+
+.new {
+  margin-top: 8px;
+  font-size: small;
+}
+.new a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

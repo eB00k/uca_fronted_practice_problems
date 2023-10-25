@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: 0;
+}
+
+body {
+  min-width: 100lvh;
+  font-family: "Poppins", sans-serif;
+  background-color: #ededed;
+  color: black;
+}
+body section {
+  height: 100vh;
+  width: 100%;
+}
+body section nav {
+  width: 100%;
+  background-color: #ededed;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+}
+body section nav .logo a {
+  color: #171717;
+}
+body section nav .logo a span {
+  color: #da0037;
+}
+body section nav .nav-links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2rem;
+}
+body section nav .nav-links li {
+  list-style: none;
+  transition: textDecoration 2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+body section nav .nav-links li a {
+  position: relative;
+  color: #444444;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  padding: 0 0.2rem;
+}
+body section nav .nav-links li a::after {
+  content: "";
+  position: absolute;
+  background-color: #da0037;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+body section nav .nav-links li a:hover:after {
+  width: 100%;
+}
+body section nav .nav-links li a:hover {
+  color: #171717;
+}
+body section nav img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+body section .hero {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+body section .hero .hero-img {
+  background-color: #171717;
+  background-image: url(../assets/meal1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body section .hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body section .hero .hero-text h2 {
+  font-size: 2.5rem;
+}
+body section .hero .hero-text p {
+  max-width: 500px;
+  color: #444444;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+body section .hero .hero-text .buy {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+body section .hero .hero-text .buy .cost {
+  color: #da0037;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+body section .hero .hero-text .buy button {
+  padding: 0 1.4rem;
+  background-color: #171717;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body section .hero .hero-text .buy button:hover {
+  background-color: rgba(23, 23, 23, 0.8);
+}
+
+@media (max-width: 768px) {
+  body section .hero {
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 2rem;
+  }
+  body section .hero .hero-img {
+    height: 400px;
+    width: 400px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #121212;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+      width: 300px;
+      height: 420px;
+      border-radius: 0.5rem;
+      background-color: rgb(0, 115, 255);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+          rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+          rgba(240, 46, 170, 0.1) -20px 20px,
+          rgba(240, 46, 170, 0.05) -25px 25px;
+      }
+    }
+
+    .card-1 {
+      background-image: url("https://images.unsplash.com/photo-1697541283989-bbefb5982de9?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8");
+    }
+    .card-2 {
+      background-image: url("https://images.unsplash.com/photo-1696790857863-e41b641311be?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D");
+    }
+    .card-3 {
+      background-image: url("https://plus.unsplash.com/premium_photo-1696273222723-e5473382eee3?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D");
+    }
+  }
+}
